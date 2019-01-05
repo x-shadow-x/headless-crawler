@@ -59,3 +59,8 @@ typings/
 
 # next.js build output
 .next
+
+resource/*.png
+resource/*.jpg
+resource/*.jpeg
+resource/*.gif

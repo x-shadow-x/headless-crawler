@@ -1,0 +1,32 @@
+{
+    "name": "headless-crawler",
+    "version": "0.0.1",
+    "description": "node爬虫",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint .",
+        "fix": "eslint --fix ."
+    },
+    
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/x-shadow-x/headless-crawler.git"
+    },
+    "author": "junyanliu",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/x-shadow-x/headless-crawler/issues"
+    },
+    "homepage": "https://github.com/x-shadow-x/headless-crawler#readme",
+    "devDependencies": {
+        "babel-eslint": "^10.0.1",
+        "eslint": "^5.3.0",
+        "eslint-config-airbnb-base": "^13.1.0",
+        "eslint-plugin-import": "^2.14.0",
+        "pre-commit": "^1.2.2"
+    },
+    "dependencies": {
+        "puppeteer": "^1.11.0"
+    }
+}
