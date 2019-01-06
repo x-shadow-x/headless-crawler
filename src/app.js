@@ -10,7 +10,7 @@ const { saveImg } = require('./helper/save-resource');
 
     await page.setViewport({
         width: 1920,
-        height: 1080
+        height: 100
     });
     console.info('reset viewport');
 
@@ -26,10 +26,12 @@ const { saveImg } = require('./helper/save-resource');
         //     const images = document.querySelectorAll('img.main_img');
         //     return Array.prototype.map.call(images, img => img.src);
         // });
-
-        srcs.forEach(src => {
-            saveImg(conf.resourcePath, src);
+        
+        srcs.forEach(async src => {
+            await page.waitFor(200);
+            await saveImg(src, conf.resourcePath);
         });
-        console.info(srcs.length);
+        console.info(srcs.length, '=========');
+        await browser.close();
     });
 })();
